@@ -1,0 +1,16 @@
+---
+# Source Layout
+source:      .
+destination: ./_site
+
+# File Handling
+exclude:  [Gemfile, Gemfile.lock]
+encoding: "utf-8"
+
+# Conversion
+markdown:    kramdown
+highlighter: pygments
+
+# Serving
+host: 0.0.0.0
+port: 5000
