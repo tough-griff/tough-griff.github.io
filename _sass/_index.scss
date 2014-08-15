@@ -1,9 +1,9 @@
-.index {
+.home {
   @include animation(bounce-in-up 1s);
   text-align: center;
 }
 
-.page-title {
+.home-title {
   @include animation(hue 20s infinite linear);
   @include background-image(linear-gradient(92deg,#f35626,#feab3a));
   -webkit-background-clip: text;
@@ -13,12 +13,12 @@
   letter-spacing: .05em;
 }
 
-.page-content {
+.home-content {
   @include animation(bounce-in-up 1s);
   @include animation-delay(.1s);
 }
 
-.page-links {
+.home-links {
   @include animation(bounce-in-up 1s);
   @include animation-delay(.2s);
 }

@@ -7,9 +7,5 @@
 @import "neat/neat";
 @import "base/base";
 
-.container {
-  @include outer-container;
-  margin-top: $base-line-height;
-}
-
-@import "index"
+@import "global";
+@import "index";
