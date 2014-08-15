@@ -1,3 +1,15 @@
 ---
 # This ensures Jekyll reads and transforms the file.
 ---
+
+@import "bourbon/bourbon";
+@import "base/grid-settings";
+@import "neat/neat";
+@import "base/base";
+
+.container {
+  @include outer-container;
+  margin-top: $base-line-height;
+}
+
+@import "index"
