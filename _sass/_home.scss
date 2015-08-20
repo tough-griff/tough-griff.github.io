@@ -1,0 +1,36 @@
+$blue: #4389a2;
+$purple: #5c258d;
+$banner-color: #fff;
+$banner-accent-color: lighten($blue, 30%);
+
+.home {
+  .banner {
+    @include background(url("/bg/hexes.svg"), linear-gradient(30deg, $purple, $blue));
+    color: $banner-color;
+    padding: 10em 0;
+
+    header {
+      @include outer-container;
+
+      h1 {
+        font-size: 3.5em;
+        font-weight: 200;
+        margin: 0;
+        margin-bottom: 16px;
+
+        em {
+          color: $banner-accent-color;
+        }
+      }
+
+      p {
+        font-weight: 200;
+        margin: 0;
+      }
+    }
+  }
+
+  .content {
+    @include outer-container;
+  }
+}

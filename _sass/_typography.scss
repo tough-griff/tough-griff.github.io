@@ -1,0 +1,13 @@
+$base-font-color: #333;
+$base-font-family: "Source Sans Pro", "sans-serif";
+$code-font-family: "Source Code Pro", "monospace";
+
+html {
+  color: $base-font-color;
+  font-family: $base-font-family;
+}
+
+code,
+pre {
+  font-family: $code-font-family;
+}

@@ -1,0 +1,28 @@
+---
+# Jekyll Config
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+timezone: America/New_York
+
+# Build Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+gems:
+  - jekyll-sitemap
+  - jemoji
+
+# Site Settings
+description:
+  Software engineer, web developer, and cool dude based in Baltimore, MD.
+url: http://griffin.yourick.me
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      title: Griffin Yourick
+      layout: default
