@@ -1,27 +1,51 @@
 $header-blue: #4389a2;
 $header-purple: #5c258d;
 $header-color: #fff;
-$header-accent-color: lighten($header-blue, 30%);
+$header-accent-color: tint($header-blue, 30%);
 
 .home {
-  @include grid-container;
+  @include clearfix;
 
   header {
     background: url("/hexes.svg"), linear-gradient(30deg, $header-purple, $header-blue);
     color: $header-color;
-    padding: 10em 0;
+    padding: 4em 0;
+
+    @media #{$large} {
+      padding: 6em 0;
+    }
+
+    @media #{$huge} {
+      padding: 8em 0;
+    }
 
     .header-content {
-      @include grid-column(8);
-      @include grid-push(2);
+      margin: 0 16.66667%;
 
       h1 {
-        font-size: 3.5em;
         font-weight: 200;
         margin: 0;
-        margin-bottom: 16px;
+        margin-bottom: .5em;
+
+        @media #{$medium} {
+          font-size: 2.5em;
+        }
+
+        @media #{$large} {
+          font-size: 3.5em;
+        }
 
         em {
+          &:before {
+            clear: both;
+            content: '';
+            display: block;
+
+            @media #{$large} {
+              display: none;
+            }
+          }
+
           color: $header-accent-color;
         }
       }
@@ -29,12 +53,15 @@ $header-accent-color: lighten($header-blue, 30%);
       span {
         font-weight: 200;
         margin: 0;
+
+        @media #{$medium} {
+          font-size: 1.17em;
+        }
       }
     }
   }
 
   main {
-    @include grid-column(8);
-    @include grid-push(2);
+    margin: 0 16.66667%;
   }
 }
