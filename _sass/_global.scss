@@ -1,6 +1,20 @@
-$medium: "only screen and (min-width: 768px)";
-$large: "only screen and (min-width: 1024px)";
-$huge: "only screen and (min-width: 1440px)";
+@mixin medium {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin huge {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
 
 body {
   margin: 0;
