@@ -1,16 +1,19 @@
-$blue: #4389a2;
-$purple: #5c258d;
-$banner-color: #fff;
-$banner-accent-color: lighten($blue, 30%);
+$header-blue: #4389a2;
+$header-purple: #5c258d;
+$header-color: #fff;
+$header-accent-color: lighten($header-blue, 30%);
 
 .home {
-  .banner {
-    @include background(url("/bg/hexes.svg"), linear-gradient(30deg, $purple, $blue));
-    color: $banner-color;
+  @include grid-container;
+
+  header {
+    background: url("/hexes.svg"), linear-gradient(30deg, $header-purple, $header-blue);
+    color: $header-color;
     padding: 10em 0;
 
-    header {
-      @include outer-container;
+    .header-content {
+      @include grid-column(8);
+      @include grid-push(2);
 
       h1 {
         font-size: 3.5em;
@@ -19,18 +22,19 @@ $banner-accent-color: lighten($blue, 30%);
         margin-bottom: 16px;
 
         em {
-          color: $banner-accent-color;
+          color: $header-accent-color;
         }
       }
 
-      p {
+      span {
         font-weight: 200;
         margin: 0;
       }
     }
   }
 
-  .content {
-    @include outer-container;
+  main {
+    @include grid-column(8);
+    @include grid-push(2);
   }
 }
