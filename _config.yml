@@ -10,7 +10,7 @@ timezone: America/New_York
 markdown: kramdown
 kramdown:
   input: GFM
-gems:
+plugins:
   - jekyll-sitemap
   - jemoji
 

@@ -6,8 +6,27 @@
     \__/\____/\__,_/\__, /_/ /_/   \__, /_/  /_/_/ /_/
                   /____/         /____/                     -->
 <html lang="en">
-  {% include head.html %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}" />
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:200,200italic,400,700" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
   <body class="{{ page.body_class }}">
-    {{ content }}
+    <header class="{{ page.header_class }}">
+      <div class="header-content">
+        <h1><a href="/">griffin yourick <span><em>//</em> tough griff</span></a></h1>
+        <h2>Software engineer, web developer, and cool dude based in Baltimore, MD.</h2>
+      </div>
+    </header>
+    <main class="{{ page.main_class }}">
+      {{ content }}
+    </main>
   </body>
 </html>

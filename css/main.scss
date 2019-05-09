@@ -7,8 +7,9 @@
 @import "bourbon/bourbon";
 
 // global styles
-@import "global";
+@import "variables";
+@import "mixins";
 @import "typography";
+@import "layout";
 
-// page styles
-@import "home";
+@import "header";
