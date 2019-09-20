@@ -1,2 +1,2 @@
 # woohoo!
-visit me at [griffin.yourick.me](http://griffin.yourick.me)
+visit me at [tough-griff.github.io](https://tough-griff.github.io)
