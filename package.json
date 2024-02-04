@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "prepare": "cp node_modules/normalize.css/normalize.css assets/css"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

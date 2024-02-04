@@ -1,0 +1,32 @@
+:root {
+  --margin: 4em calc(100vw / 6);
+  --pink: #e298f2;
+  --blue: #89cff0;
+}
+
+html {
+  color: #333;
+  font-family: 'Source Sans 3', 'sans-serif';
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background: url('/assets/images/hexes.svg'), linear-gradient(30deg, var(--pink), var(--blue));
+  padding: var(--margin);
+}
+header h1 {
+  margin-top: 0;
+}
+
+main {
+  margin: var(--margin);
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

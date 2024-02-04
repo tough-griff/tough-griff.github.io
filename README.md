@@ -1,2 +1,3 @@
 # woohoo!
-visit me at [tough-griff.github.io](https://tough-griff.github.io)
+
+visit me at [www.grff.dev](https://www.grff.dev)
