@@ -1,3 +1,3 @@
 # woohoo!
 
-visit me at [www.grff.dev](https://www.grff.dev)
+visit me at [griffin.yourick.net](https://griffin.yourick.net)
